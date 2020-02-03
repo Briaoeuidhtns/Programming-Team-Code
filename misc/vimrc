@@ -1,0 +1,3 @@
+inoremap fd <esc>
+inoremap df <esc>
+set ts=4
