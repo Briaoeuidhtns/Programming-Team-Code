@@ -1,3 +1,5 @@
 inoremap fd <esc>
 inoremap df <esc>
 set ts=4
+map <C-j> 6j
+map <C-k> 6k
