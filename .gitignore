@@ -2,3 +2,8 @@
 *.pdf
 *.log
 *.lol
+*.dvi
+*.fdb_latexmk
+*.fls
+__pycache__/
+auto/
