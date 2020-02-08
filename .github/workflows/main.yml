@@ -1,0 +1,24 @@
+name: Build
+
+on: [push]
+
+jobs:
+  build_latex:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      
+    - uses: xu-cheng/latex-action@master
+      with:
+        root_file: 25_pg-reference.tex
+      
+    - run: |
+        mkdir -p release
+        mv 25_pg-reference.pdf release
+
+    - uses: actions/upload-artifact@v1
+      with:
+        name: reference
+        path: release
